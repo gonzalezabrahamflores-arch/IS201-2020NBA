@@ -1,0 +1,81 @@
+/* NBA Branding Colors */
+:root {
+    --nba-blue: #1d428a;
+    --nba-red: #c8102e;
+    --nba-navy: #0b214d;
+}
+
+body {
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+}
+
+/* Hero Section (Home & About) */
+.hero-section, .about-hero {
+    background: linear-gradient(135deg, var(--nba-blue) 0%, var(--nba-navy) 100%);
+    color: white;
+    padding: 100px 0 140px 0;
+    text-align: center;
+    border-bottom: 6px solid var(--nba-red);
+}
+
+/* Professional Card Overlap */
+.resume-card, .bio-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    padding: 50px;
+    margin-top: -80px; /* This creates the professional "tucked" look */
+    border-top: 5px solid var(--nba-blue);
+    position: relative;
+    z-index: 10;
+}
+
+/* Section Headings */
+.section-title {
+    color: var(--nba-blue);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--nba-red);
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Skills Badges */
+.skills-badge {
+    background-color: #e9ecef;
+    color: var(--nba-navy);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.skills-badge:hover {
+    background-color: var(--nba-blue);
+    color: white;
+}
+
+/* Navigation Overrides */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-link.active {
+    color: #ffc107 !important; /* Gold highlight for the current page */
+}
